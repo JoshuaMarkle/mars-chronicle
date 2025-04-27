@@ -5,7 +5,7 @@ import ArticleSection from '@/components/article-section';
 import TwoColumnLayout from '@/components/two-column-layout';
 import InfoCard from '@/components/info-card';
 import PullQuote from '@/components/pull-quote';
-import { BotIcon as RobotIcon, UserIcon, AlertTriangleIcon, BrainIcon } from 'lucide-react';
+import { BotIcon as RobotIcon, UserIcon, AlertTriangleIcon, BrainIcon, AtomIcon } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
             accent={true}
           />
           <p className="mt-4 text-lg text-black/70 dark:text-white/70">
-            By James Grappe • {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+            By James Grappe, Ivelina Stefanova, Valerio Costa, Cassandre Melot • {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
           </p>
         </div>
         
@@ -63,10 +63,13 @@ export default function Home() {
             leftContent={
               <div className="space-y-5">
                 <p>
-                  Despite our inherent curiosity and adaptability, human exploration of Mars faces formidable challenges that cannot be overlooked. The journey to Mars alone exposes astronauts to dangerous levels of cosmic radiation, potentially increasing cancer risk and causing other health complications. The six-to-nine-month transit occurs in microgravity, leading to muscle atrophy and bone density loss that would severely impact performance upon arrival.
+                  While sending humans to Mars is exciting, major challenges make it much harder and riskier than sending robots. First, the human body is not built for the extreme conditions on Mars. The atmosphere is mostly carbon dioxide, the surface pressure is less than 1% of Earth’s, and temperatures can swing from a high of 20°C (68°F) in the summer to lows of -153°C (-243°F) in the winter. Humans would need constant life support, including oxygen, food, water, and protection from radiation. Even just carrying the necessary water would be incredibly heavy - one person would need about 3,600 liters for a 900-day mission. 
                 </p>
                 <p>
-                  Once on Mars, explorers would face constant exposure to radiation without Earth's protective magnetic field, extreme temperature fluctuations, and the psychological toll of isolation in a hostile environment. Additionally, the life support systems required to keep humans alive are complex, heavy, and vulnerable to failure—with no possibility of rapid rescue or evacuation.
+                Beyond survival needs, there are serious physical risks. Long spaceflights cause muscle and bone loss, weaken the immune system, and even affect vision through conditions like Space-Associated Neuro-Ocular Syndrome. Radiation exposure is also a big problem; astronauts could receive over 1 sievert of radiation on a Mars mission, increasing their risk of cancer and other health issues. 
+                </p>
+                <p>
+                There are also psychological concerns. Isolation, confinement, and long communication delays with Earth (up to 40 minutes each way) could cause mental health issues like depression or anxiety. Equipment failures pose another threat because, without immediate help from Earth, astronauts would have to solve problems on their own. Finally, a human mission would be costly compared to robotic missions because everything -from food systems to return vehicles - must be designed to keep people alive for years. All of these risks make it important to ask whether robots, not humans, should be the ones paving the way first. 
                 </p>
               </div>
             }
@@ -89,8 +92,8 @@ export default function Home() {
           />
           
           <PullQuote 
-            quote="The human body is exquisitely adapted to life on Earth but remarkably fragile in the harsh environment of deep space and Mars." 
-            attribution="Dr. Sheila Jansen, Aerospace Medicine Specialist"
+            quote="All space exploration is risky. As an astronaut, I had to decide each and every time I went to space whether or not to risk my life for the mission." 
+            attribution="Astronaut John M. Grunsfeld"
           />
           
           <p>
@@ -141,7 +144,8 @@ export default function Home() {
             }
             reversed={true}
           />
-          
+
+
           <p>
             Despite these limitations, current rovers have demonstrated extraordinary resilience. Opportunity, designed for a 90-day mission, operated for nearly 15 years. Curiosity continues to function a decade after landing. These achievements highlight the potential longevity advantage of robotic explorers when compared to human missions, which would likely be limited to much shorter durations due to resource constraints and human health considerations.
           </p>
@@ -153,16 +157,22 @@ export default function Home() {
           subtitle="Advanced AI and robotics technologies will transform Mars exploration capabilities"
           accent={true}
         >
-          <div className="text-column">
-            <p>
-              The next generation of Mars robots will need dramatic improvements to truly surpass human capabilities. Most critically, they require advanced AI systems capable of autonomous decision-making, problem-solving, and adapting to unforeseen circumstances without Earth-based intervention. Recent breakthroughs in large language models, computer vision, and reinforcement learning provide a foundation for developing these capabilities.
-            </p>
-            <p>
-              Mobility systems will need significant enhancement, potentially drawing inspiration from Boston Dynamics' versatile robots that can traverse challenging terrain with animal-like agility. Advanced manipulators with human-level dexterity would enable complex sample collection and equipment maintenance. These physical improvements, coupled with AI-driven autonomy, would create robotic systems capable of performing tasks that currently only humans can do.
-            </p>
-          </div>
+        <div className="columns-1 md:columns-2 gap-8 space-y-4">
+          <p>
+            Future Mars robots could revolutionize planetary exploration simply by virtue of better, more versatile mobility systems specifically designed for Mars’s punishing terrain. While traditional wheeled rovers struggle immensely on Mars’s shifting sands and rocky inclines, advanced robots utilizing articulated multi-limbed systems could drastically enhance their ability to traverse rough terrain. For instance, inspired by animals like spiders or mountain goats, these robots would carefully distribute their weight across multiple agile limbs, each equipped with independent intelligent actuators and sophisticated balance algorithms that adapt in real time to Mars’s unpredictable surface. Such a design would enable them to scale steep cliffs, effortlessly climb out of sandy depressions, and maintain stability on loose soil that currently poses significant navigational challenges.
+          </p>
+          <p>
+            Additionally, future robotic explorers could incorporate hybrid mobility systems, seamlessly transitioning between rolling on rugged wheels and stepping or climbing modes depending on the terrain. This hybrid design would optimize energy efficiency by reserving power intensive climbing or stepping motions for obstacles that cannot be tackled through wheeled navigation alone. Another intriguing concept involves shape shifting wheels made from flexible metallic mesh, able to dynamically adjust their shape and stiffness, effectively flowing around obstacles instead of being immobilized by them.
+          </p>
+          <p>
+            Advanced aerial mobility could also significantly expand our robotic toolkit. Future Mars drones, significantly more robust than today’s small experimental helicopters, would use larger rotors and substantially improved propulsion systems to cover extensive distances, scouting optimal paths for ground based robots. Such aerial scouts would feed precise topographical maps and obstacle data directly back to surface robots, dramatically increasing their navigational efficiency.
+          </p>
+          <p>
+            Ultimately, investing concurrently in developing sophisticated, specialized robotic mobility systems alongside crewed mission plans seems like the practical choice, maximizing our ability to comprehensively explore and understand the Martian landscape before any human boot ever sinks into Martian dust.
+          </p>
+        </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
             <InfoCard 
               title="Enhanced Autonomy" 
               icon={<BrainIcon className="w-6 h-6" />}
@@ -183,11 +193,14 @@ export default function Home() {
             >
               <p>Rather than single rovers, future exploration could deploy interconnected robot teams with specialized functions—flying drones for aerial surveys, tunneling robots for subsurface exploration, and stationary units for long-term monitoring—all coordinating through distributed AI networks.</p>
             </InfoCard>
+
+            <InfoCard 
+              title="Nuclear Power Systems" 
+              icon={<AtomIcon className="w-6 h-6" />}
+            >
+              <p> Energy systems represent another critical area for improvement. Nuclear power sources, like the radioisotope thermoelectric generators used in some current rovers, could be scaled up to provide continuous power regardless of environmental conditions. This would enable 24/7 operations and support the increased computing requirements of advanced AI systems.</p>
+            </InfoCard>
           </div>
-          
-          <p>
-            Energy systems represent another critical area for improvement. Nuclear power sources, like the radioisotope thermoelectric generators used in some current rovers, could be scaled up to provide continuous power regardless of environmental conditions. This would enable 24/7 operations and support the increased computing requirements of advanced AI systems.
-          </p>
           
           <PullQuote 
             quote="The ideal Mars explorer wouldn't be a better human or a better robot, but a new synthesis—AI systems with human-level cognition combined with robotic bodies perfectly adapted to the Martian environment." 
