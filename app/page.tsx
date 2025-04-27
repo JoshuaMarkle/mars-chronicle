@@ -27,7 +27,7 @@ export default function Home() {
         
         <div className="relative w-full aspect-[21/9] max-w-5xl mx-auto rounded-md overflow-hidden">
           <Image 
-            src="https://wallpapercave.com/wp/wp4516010.jpg" 
+            src="https://imgs.search.brave.com/aEtOvtpJA2avs8xCfkUpoFe__Y7NxTyV4HLBLmNFRno/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lYXJ0/aHNreS5vcmcvdXBs/LzIwMjEvMDQvcGlh/MjM3MjAtZTE2MTgx/MzI3NTgyODcuanBn" 
             alt="Mars rover on the surface of Mars"
             fill
             className="object-cover"
@@ -114,7 +114,7 @@ export default function Home() {
         >
           <div className="relative w-full aspect-video mb-6 rounded-md overflow-hidden">
             <Image 
-              src="https://wallpapercave.com/wp/wp4515991.jpg" 
+              src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/mars/resources/detail_files/2/4/24804_1-PIA23764-RoverNamePlateonMars-web.jpg?w=1200&h=675&fit=clip&crop=faces%2Cfocalpoint" 
               alt="Current Mars rover"
               fill
               className="object-cover"
@@ -233,7 +233,7 @@ export default function Home() {
             rightContent={
               <div className="relative w-full aspect-square rounded-md overflow-hidden">
                 <Image 
-                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fget.wallhere.com%2Fphoto%2Fai-art-illustration-science-fiction-astronaut-Mars-2226364.jpg&f=1&nofb=1&ipt=20f359d1b8d977657cba5cba66069a12e6433e750f102ad6d20a148c0734c0f7" 
+                  src="https://live.staticflickr.com/65535/53376331871_0115d0a6e5_z.jpg" 
                   alt="Future of Mars exploration"
                   fill
                   className="object-cover"
