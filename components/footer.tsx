@@ -34,19 +34,19 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-playfair font-bold text-lg mb-4">Stay Connected</h3>
+            <h3 className="font-playfair font-bold text-lg mb-4">Contact the Authors for Comments</h3>
             <p className="text-sm text-black/70 dark:text-white/70 mb-4">
-              Subscribe to our newsletter for the latest updates on Mars exploration and AI advancements.
+              We’d love to hear your thoughts. Feel free to get in touch with us for feedback or comments.
             </p>
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="px-3 py-2 bg-white dark:bg-black/60 border border-black/20 dark:border-white/20 rounded-l-md w-full focus:outline-none focus:ring-1 focus:ring-accent-red"
-              />
-              <button className="bg-accent-red hover:bg-accent-red/90 text-white px-4 py-2 rounded-r-md transition-colors">
-                Subscribe
-              </button>
+            <div className="text-center">
+              <a 
+                href="https://app.peerceptiv.com/course/85fc4154-a403-4830-ae62-57986d9bb160/assignment/ca7c9a62-6654-457c-bc9a-2a4c6592abde/dashboard" // Replace with your desired link
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-accent-red hover:bg-accent-red/90 text-white py-2 px-8 rounded-full transition-colors"
+              >
+                Contact the Authors
+              </a>
             </div>
           </div>
         </div>

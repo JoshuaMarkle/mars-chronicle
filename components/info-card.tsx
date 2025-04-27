@@ -17,13 +17,15 @@ const InfoCard = ({ title, icon, children, className }: InfoCardProps) => {
       className
     )}>
       {(title || icon) && (
-        <div className="flex items-center space-x-3 mb-4">
+        <div className="flex items-center gap-4 mb-4">
           {icon && (
-            <div className="text-accent-red">
+            <div className="text-accent-red mt-1 flex-shrink-0 text-2xl">
               {icon}
             </div>
           )}
-          <h3 className="font-playfair font-bold text-xl">{title}</h3>
+          <h3 className="font-playfair font-bold text-xl leading-tight">
+            {title}
+          </h3>
         </div>
       )}
       <div className="space-y-3 text-black/80 dark:text-white/80">
@@ -32,5 +34,6 @@ const InfoCard = ({ title, icon, children, className }: InfoCardProps) => {
     </div>
   );
 };
+
 
 export default InfoCard;
