@@ -34,23 +34,22 @@ export default function Home() {
           />
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
             <p className="text-white text-sm">
-				Real rover on Mars, trust
             </p>
           </div>
         </div>
       </header>
 
-      {/* Lead paragraph */}
-      <div className="max-w-4xl mx-auto mb-10">
-        <div className="text-column">
-          <p className="text-lg">
-            As humanity contemplates the next giant leap in space exploration—establishing a presence on Mars—a crucial question emerges: Should humans or robots lead the way? Recent advancements in artificial intelligence and robotics are challenging the traditional narrative that human exploration is the ultimate goal. With AI capabilities expanding exponentially and the harsh realities of long-duration space travel becoming increasingly apparent, there's a compelling case for robotic precursors as not just preparation, but potentially the primary means of Mars exploration.
-          </p>
-          <p>
-            The romance of human footprints on Martian soil has captivated our imagination for decades. However, practical considerations of safety, cost, and scientific output demand a pragmatic reassessment. Advanced AI-powered robots offer advantages that human explorers cannot match in the extreme Martian environment—they don't require life support, can operate continuously in radiation-filled environments, and present no risk of biological contamination to potential Martian ecosystems or of bringing unknown pathogens back to Earth.
-          </p>
-        </div>
+    {/* Lead paragraph */}
+    <div className="max-w-4xl mx-auto mb-10">
+      <div className="text-column">
+        <p className="text-base">
+          As humanity contemplates the next giant leap in space exploration—establishing a presence on Mars—a crucial question emerges: Should humans or robots lead the way? Recent advancements in artificial intelligence and robotics are challenging the traditional narrative that human exploration is the ultimate goal. With AI capabilities expanding exponentially and the harsh realities of long-duration space travel becoming increasingly apparent, there's a compelling case for robotic precursors as not just preparation, but potentially the primary means of Mars exploration.
+        </p>
+        <p className="text-base">
+          The romance of human footprints on Martian soil has captivated our imagination for decades. However, practical considerations of safety, cost, and scientific output demand a pragmatic reassessment. Advanced AI-powered robots offer advantages that human explorers cannot match in the extreme Martian environment—they don't require life support, can operate continuously in radiation-filled environments, and present no risk of biological contamination to potential Martian ecosystems or of bringing unknown pathogens back to Earth.
+        </p>
       </div>
+    </div>
 
       {/* Main Content */}
       <div className="max-w-5xl mx-auto">
@@ -59,38 +58,45 @@ export default function Home() {
           title="The Drawbacks of Human Explorers" 
           subtitle="The human body presents significant challenges to Mars exploration"
         >
-          <TwoColumnLayout
-            leftContent={
-              <div className="space-y-5">
-                <p>
-                  While sending humans to Mars is exciting, major challenges make it much harder and riskier than sending robots. First, the human body is not built for the extreme conditions on Mars. The atmosphere is mostly carbon dioxide, the surface pressure is less than 1% of Earth’s, and temperatures can swing from a high of 20°C (68°F) in the summer to lows of -153°C (-243°F) in the winter. Humans would need constant life support, including oxygen, food, water, and protection from radiation. Even just carrying the necessary water would be incredibly heavy - one person would need about 3,600 liters for a 900-day mission. 
-                </p>
-                <p>
-                Beyond survival needs, there are serious physical risks. Long spaceflights cause muscle and bone loss, weaken the immune system, and even affect vision through conditions like Space-Associated Neuro-Ocular Syndrome. Radiation exposure is also a big problem; astronauts could receive over 1 sievert of radiation on a Mars mission, increasing their risk of cancer and other health issues. 
-                </p>
-                <p>
-                There are also psychological concerns. Isolation, confinement, and long communication delays with Earth (up to 40 minutes each way) could cause mental health issues like depression or anxiety. Equipment failures pose another threat because, without immediate help from Earth, astronauts would have to solve problems on their own. Finally, a human mission would be costly compared to robotic missions because everything -from food systems to return vehicles - must be designed to keep people alive for years. All of these risks make it important to ask whether robots, not humans, should be the ones paving the way first. 
-                </p>
-              </div>
-            }
-            rightContent={
-              <InfoCard 
-                title="Human Limitations" 
-                icon={<UserIcon className="w-6 h-6" />}
-              >
-                <ul>
-                  <li>Require extensive life support systems (oxygen, water, food, waste management)</li>
-                  <li>Vulnerable to radiation exposure during transit and on Martian surface</li>
-                  <li>Susceptible to physical deterioration in microgravity</li>
-                  <li>Limited operational time due to biological needs (sleep, rest)</li>
-                  <li>Psychological challenges from isolation and confinement</li>
-                  <li>Risk of biological contamination in both directions</li>
-                  <li>Limited mission duration due to consumable supplies</li>
-                </ul>
-              </InfoCard>
-            }
-          />
+      <div className="max-w-5xl mx-auto mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Left Column (First 2 paragraphs) */}
+          <div className="space-y-5">
+            <p>
+              While sending humans to Mars is exciting, major challenges make it much harder and riskier than sending robots. First, the human body is not built for the extreme conditions on Mars. The atmosphere is mostly carbon dioxide, the surface pressure is less than 1% of Earth’s, and temperatures can swing from a high of 20°C (68°F) in the summer to lows of -153°C (-243°F) in the winter. Humans would need constant life support, including oxygen, food, water, and protection from radiation. Even just carrying the necessary water would be incredibly heavy - one person would need about 3,600 liters for a 900-day mission.
+            </p>
+            <p>
+              Beyond survival needs, there are serious physical risks. Long spaceflights cause muscle and bone loss, weaken the immune system, and even affect vision through conditions like Space-Associated Neuro-Ocular Syndrome. Radiation exposure is also a big problem; astronauts could receive over 1 sievert of radiation on a Mars mission, increasing their risk of cancer and other health issues.
+            </p>
+          </div>
           
+          {/* Right Column with InfoCard and third paragraph wrapping around it */}
+          <div className="space-y-5">
+            <InfoCard 
+              title="Human Limitations" 
+              icon={<UserIcon className="w-6 h-6" />}
+            >
+              <ul>
+                <li>Require extensive life support systems (oxygen, water, food, waste management)</li>
+                <li>Vulnerable to radiation exposure during transit and on Martian surface</li>
+                <li>Susceptible to physical deterioration in microgravity</li>
+                <li>Limited operational time due to biological needs (sleep, rest)</li>
+                <li>Psychological challenges from isolation and confinement</li>
+                <li>Risk of biological contamination in both directions</li>
+                <li>Limited mission duration due to consumable supplies</li>
+              </ul>
+            </InfoCard>
+          </div>
+        </div>
+
+        {/* Third Paragraph Wrapping Around InfoCard */}
+        <div className="mt-8 flex flex-wrap gap-8">
+        <p className="flex-1 no-first-letter-style">
+          There are also psychological concerns. Isolation, confinement, and long communication delays with Earth (up to 40 minutes each way) could cause mental health issues like depression or anxiety. Equipment failures pose another threat because, without immediate help from Earth, astronauts would have to solve problems on their own. Finally, a human mission would be costly compared to robotic missions because everything—from food systems to return vehicles—must be designed to keep people alive for years. All of these risks make it important to ask whether robots, not humans, should be the ones paving the way first.
+        </p>
+        </div>
+      </div>
+
           <PullQuote 
             quote="All space exploration is risky. As an astronaut, I had to decide each and every time I went to space whether or not to risk my life for the mission." 
             attribution="Astronaut John M. Grunsfeld"
@@ -203,8 +209,8 @@ export default function Home() {
           </div>
           
           <PullQuote 
-            quote="The ideal Mars explorer wouldn't be a better human or a better robot, but a new synthesis—AI systems with human-level cognition combined with robotic bodies perfectly adapted to the Martian environment." 
-            attribution="Professor Yuki Tanaka, AI and Robotics Institute"
+            quote="Anything humans can do in space, robots can do better." 
+            attribution="Trevor Paglen, Artist and Geographer"
           />
         </ArticleSection>
 
