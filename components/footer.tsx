@@ -53,9 +53,6 @@ const Footer = () => {
         
         <div className="mt-8 pt-6 border-t border-black/10 dark:border-white/10 text-center text-sm text-black/60 dark:text-white/60">
           <p>© {new Date().getFullYear()} The Mars Chronicle. All rights reserved.</p>
-          <p className="mt-2">
-            This fictional newspaper is for educational purposes only.
-          </p>
         </div>
       </div>
     </footer>
