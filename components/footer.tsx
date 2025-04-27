@@ -19,7 +19,7 @@ const Footer = () => {
             <h3 className="font-playfair font-bold text-lg mb-4">Sections</h3>
             <ul className="space-y-2 text-sm">
               <li className="hover:text-accent-red transition-colors">
-                <a href="#exploration">Mars Exploration</a>
+                <a href="#top">Home</a> {/* Updated Home link */}
               </li>
               <li className="hover:text-accent-red transition-colors">
                 <a href="#humans">Human Factors</a>

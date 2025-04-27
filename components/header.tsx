@@ -43,7 +43,7 @@ const Header = () => {
             <nav>
               <ul className="flex space-x-6 font-medium">
                 <li className="hover:text-accent-red transition-colors">
-                  <a href="#exploration">Exploration</a>
+                  <a href="#exploration">Home</a>
                 </li>
                 <li className="hover:text-accent-red transition-colors">
                   <a href="#humans">Human Factors</a>
